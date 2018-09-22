@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sithira.me.eventmanager">
+
+    <application
+        android:name=".EventManager"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".auth.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.AllEvents" />
+        <activity android:name=".auth.RegisterActivity" />
+        <activity android:name=".activities.CreateEvent" />
+        <activity android:name=".activities.EditEvent" />
+
+    </application>
+
+</manifest>
